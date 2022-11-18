@@ -21,5 +21,5 @@ while (true)
 int numberSecondThird = numberTD % 100;
 int numberSecond = numberSecondThird / 10;
 
-Console.WriteLine($"{numberTD} -> {numberSecond}");
+Console.WriteLine($"{numberTD} -> {numberSecond}"); 
 

@@ -17,9 +17,15 @@ while (true)
 }
 if (numberBig / 100 == 0)
     Console.WriteLine($"{numberBig} -> третьей цифры нет.");
-else 
-    Convert.ToInt32(numberBig);
-    string digit = Convert.ToString(numberBig);
-    Console.WriteLine($"{numberBig} -> {digit[2]}");
 
-  
+int numberThreeGrade = 0;
+int numberCheck = numberBig;
+
+if (numberCheck >= 100);
+    {
+        while (numberCheck > 999)
+            numberCheck = numberCheck / 10;
+    }
+    numberThreeGrade = numberCheck % 10;
+
+Console.WriteLine($"{numberBig} -> {numberThreeGrade}");  
